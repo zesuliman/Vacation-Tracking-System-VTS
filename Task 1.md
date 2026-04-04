@@ -9,9 +9,13 @@ without having to be an expert in company policy or the local facility’s leave
 policies.
 
 **### Functional Requirments ###** 
+
 **### Non-Functional Requirments ###** 
+
 **### Constraints ###** 
+
 **### Domain Problem ###** 
+
 **### Actors ###** 
 
 

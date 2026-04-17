@@ -1,6 +1,2 @@
-# Mentorship-Projects
-The repository contains a number of projects that will be produced during the mentorship.
--  Vacation Tracking System
--  E-commerce
--  Food Delivery
--  TripTrekkier - Booking
+# Vacation Tracking system
+This repositroy provide an implementation exampmle for a Vacation Tracking System (VTS).

@@ -1,2 +1,2 @@
 # Vacation Tracking system
-This repositroy provide an implementation exampmle for a Vacation Tracking System (VTS).
+This repositroy provide an implementation example for a Vacation Tracking System (VTS).

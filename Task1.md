@@ -55,7 +55,9 @@ Moreover, organizations and large enterprieses more often have their own running
 2. Flow Chart
 3. Sequence Diagram
 4. Pseudocode
-  INPUT req_employee_id, selected_vacation_category
+
+```pseudocode
+INPUT req_employee_id, selected_vacation_category
 
 CONNECT TO database "VTSDatabase"
 
@@ -103,3 +105,4 @@ ELSE
 END IF
 
 DISCONNECT
+```

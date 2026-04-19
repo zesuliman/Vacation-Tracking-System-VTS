@@ -55,3 +55,51 @@ Moreover, organizations and large enterprieses more often have their own running
 2. Flow Chart
 3. Sequence Diagram
 4. Pseudocode
+  INPUT req_employee_id, selected_vacation_category
+
+CONNECT TO database "VTSDatabase"
+
+CREATE OBJECT Employee employee
+READ FROM Employees WHERE employee_id = req_employee_id INTO employee
+
+READ FROM Vacation_Time_Balance 
+WHERE employee_id = req_employee_id AND vacation_category = selected_vacation_category 
+INTO balance_value
+
+IF balance_value > 0 THEN
+    
+    INPUT vacation_request_date, vacation_request_time
+    INPUT title, description
+    
+    IF validate(vacation_request_date) = true AND
+       validate(vacation_request_time) = true AND
+       validate(title) = true AND
+       validate(description) = true THEN
+        
+        CREATE OBJECT VacationRequest vacationRequest
+        
+        SET vacationRequest.vacation_request_date = vacation_request_date
+        SET vacationRequest.vacation_request_time = vacation_request_time
+        SET vacationRequest.title = title
+        SET vacationRequest.description = description
+        SET vacationRequest.status = "pending"
+        
+        IF employee.hasManager = true THEN
+            CALL send_email(
+                to = employee.manager_email, 
+                subject = "Vacation Request", 
+                body = vacationRequest
+            )
+        END IF
+        
+        OUTPUT "Vacation request submitted successfully"
+        
+    ELSE
+        OUTPUT "Incomplete or Incorrect Information"
+    END IF
+    
+ELSE
+    OUTPUT "Insufficient balance"
+END IF
+
+DISCONNECT

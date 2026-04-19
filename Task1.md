@@ -65,10 +65,10 @@ CREATE OBJECT Employee employee
 READ FROM Employees WHERE employee_id = req_employee_id INTO employee
 
 READ FROM Vacation_Time_Balance 
-WHERE employee_id = req_employee_id AND vacation_category = selected_vacation_category 
-INTO balance_value
+WHERE employee_id = req_employee_id AND vacation_category_id = selected_vacation_category 
+INTO remaining_balance_value
 
-IF balance_value > 0 THEN
+IF remaining_balance_value > 0 THEN
     
     INPUT vacation_request_date, vacation_request_time
     INPUT title, description

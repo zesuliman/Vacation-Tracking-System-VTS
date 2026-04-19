@@ -61,40 +61,55 @@ INPUT req_employee_id, selected_vacation_category
 
 CONNECT TO database "VTSDatabase"
 
+// Employee Retrieval
 CREATE OBJECT Employee employee
 READ FROM Employees WHERE employee_id = req_employee_id INTO employee
 
+// Balance validation
 READ FROM Vacation_Time_Balance 
 WHERE employee_id = req_employee_id AND vacation_category_id = selected_vacation_category 
 INTO remaining_balance_value
 
-IF remaining_balance_value > 0 THEN
+
+IF remaining_balance_value IS NOT NULL AND remaining_balance_value > 0 THEN
     
-    INPUT vacation_request_date, vacation_request_time
+    INPUT vacation_request_start_date, vacation_request_end_date
     INPUT title, description
     
-    IF validate(vacation_request_date) = true AND
-       validate(vacation_request_time) = true AND
-       validate(title) = true AND
-       validate(description) = true THEN
+    IF validateFrToDates(vacation_request_start_date, vacation_request_end_date) = true AND
+       validateTitle(title) = true AND
+       validateDescription(description) = true THEN
+
+        SET requested_days = CALCULATE_DAYS_BETWEEN(vacation_request_start_date, vacation_request_end_date)
         
-        CREATE OBJECT VacationRequest vacationRequest
+        IF checkBalanceAvailability(requested_days, remaining_balance_value) = true THEN
         
-        SET vacationRequest.vacation_request_date = vacation_request_date
-        SET vacationRequest.vacation_request_time = vacation_request_time
-        SET vacationRequest.title = title
-        SET vacationRequest.description = description
-        SET vacationRequest.status = "pending"
-        
-        IF employee.hasManager = true THEN
-            CALL send_email(
-                to = employee.manager_email, 
-                subject = "Vacation Request", 
-                body = vacationRequest
-            )
+            CREATE OBJECT VacationRequest vacationRequest
+            
+            SET vacationRequest.vacation_request_start_date = vacation_request_start_date
+            SET vacationRequest.vacation_request_end_date = vacation_request_end_date
+            SET vacationRequest.requested_days = requested_days
+            SET vacationRequest.title = title
+            SET vacationRequest.description = description
+            
+            IF employee.hasManager = true THEN
+                SET vacationRequest.status = "pending_approval"
+                CALL send_email(
+                    to = employee.manager_email, 
+                    subject = "Vacation Request", 
+                    body = vacationRequest
+                )
+                OUTPUT "Request sent to manager for approval"
+            ELSE
+                SET vacationRequest.status = "approved"
+                OUTPUT "No manager assigned. Request auto-approved."
+            END IF
+            
+            OUTPUT "Vacation request submitted successfully"
+            
+        ELSE
+            OUTPUT "Requested days exceed available balance"
         END IF
-        
-        OUTPUT "Vacation request submitted successfully"
         
     ELSE
         OUTPUT "Incomplete or Incorrect Information"
@@ -104,5 +119,37 @@ ELSE
     OUTPUT "Insufficient balance"
 END IF
 
+DISCONNECT
+
+// Function definitions
+FUNCTION checkBalanceAvailability(requested_days, available_balance)
+    IF requested_days <= available_balance THEN
+        RETURN true
+    ELSE
+        RETURN false
+    END IF
+END FUNCTION
+
+FUNCTION validateFrToDates(start_date, end_date)
+    IF start_date > end_date THEN
+        OUTPUT "End date must be after start date"
+        RETURN false
+    END IF
+    
+    SET max_future_date = CURRENT_DATE + 18 MONTHS
+
+    IF end_date > max_future_date THEN
+        OUTPUT "Requests cannot exceed 18 months in the future"
+        RETURN false
+    END IF
+
+   SET min_past_date = CURRENT_DATE - 6 MONTHS
+
+    IF start_date < min_past_date THEN
+        OUTPUT "Requests cannot be before 6 months in the past"
+        RETURN false
+    END IF 
+    RETURN true
+END FUNCTION
 DISCONNECT
 ```

@@ -121,6 +121,8 @@ DISCONNECT
 DISCONNECT
 ```
 **Q3: Draw the state machine of the request. [ch5]**
+**A3:**
+![State Machine Diagram](E:\AE Mentorship\Project 1\UML\State Machine Diagrame_Request States.png)
 
 **Q4: Draw the sequence diagram of the request. [ch5]**
 

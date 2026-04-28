@@ -12,7 +12,7 @@
 CONNECT TO database "VTSDatabase"
 // Function definitions
 
-//retreive Next Request Status: to ensure the correct request progression accross all stages
+//retreive Next Request Status: to ensure there is a correct request progression accross all stages
 Function retriveNextStep (Vacation_Request vacation_request)
   READ FROM Vacation_Status
   WHERE status_id = vacation_request.status_id INTO next_status_sequence

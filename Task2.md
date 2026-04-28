@@ -126,5 +126,5 @@ DISCONNECT
 
 **Q4: Draw the sequence diagram of the request. [ch5]**
 
-**Q6: Complete the rest of the use-case of this chapter [Cancel - Edit Pending Request] Flowchart, sequence diagram - check database change**
+**Q5: Complete the rest of the use-case of this chapter [Cancel - Edit Pending Request] Flowchart, sequence diagram - check database change**
 

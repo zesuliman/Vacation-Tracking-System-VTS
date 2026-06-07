@@ -20,8 +20,6 @@ This system enables employees to manage their leave and time-off requests while 
 * **Data Modeling:** Building an efficient relational data model to accurately store user hierarchies and stateful vacation requests.
 * **Security:** Implementing robust, role-based access control to ensure strict separation between employee, manager, and HR permissions.
 
-## 📺 Watch the Full Series!
-*(Note: Add your YouTube video link or image placeholder here!)*
 
 ## 🚀 Getting Started
 

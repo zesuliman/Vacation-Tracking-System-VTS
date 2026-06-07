@@ -29,7 +29,8 @@ The easiest way to see how this works is to launch the app instantly using Docke
 
 1. Download the `docker-compose.yml` file provided in the repository.
 2. Open your terminal, navigate to the folder containing the file, and run:
-   ```bash docker-compose up
+   ```bash
+   docker-compose up
 3. Docker will automatically download the correct version of MySQL, initialize the database schema, install the Java dependencies, and launch the application.
 
 💡 How to Tweak This Project for Your Own Uses

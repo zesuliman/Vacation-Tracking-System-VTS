@@ -1,54 +1,45 @@
-# Vacation Tracking system VTS
-## This repositroy provide an implementation example for a dynamic Vacation Tracking System designed for multi-manager organizational structures. This system enables employees to manage their leave and time-off requests while providing managers with a centralized view to track and schedule leaves across multiple projects and cross-functional teams.
+# 🌴 Vacation Tracking System (VTS)
 
-The project provide the following functionalities :
-- Implements a flexible rules-based system for validating and verifying leave time requests.
-- Enables employees to manage their vacation time.
-- Enables manager approval (optional).
-- Provides access to requests for the previous calendar year, and allows requests to be made up to a year and a half in the future.
-- Uses e-mail notification to request manager approval and notify employees of request status changes.
-- Uses existing hardware and middleware.
-- Is implemented as an extension to the existing intranet portal system, and uses the portal's single-sign-on mechanisms for all authentication.
-- Keeps activity logs for all transactions.
-- Enables HR personnel to enter and update employee vacation data in the system.
-- Enables the HR and system administration personnel to override all actions restricted by rules, with logging of those overrides.
-- Allows managers to directly award personal leave time (with system-set limits).
-- Provides a Web service interface for other internal systems to query any given employee’s vacation request summary.
-- Interfaces with the HR department legacy systems to retrieve required employee information and changes
+This repository provides an implementation example for a dynamic Vacation Tracking System designed for multi-manager organizational structures. 
 
-## Core Engineering Challenges
-- handle the complex business logic of validating vacation request dates and employee balances.
-- building an efficient data model to store users and vacation requests data.
-- implement role-based security for employees and managers.
+This system enables employees to manage their leave and time-off requests while providing managers with a centralized view to track and schedule leaves across multiple projects and cross-functional teams.
 
-## Watch the full series!
+## ✨ Key Features
+* **Rules-Based Validation:** Implements a flexible rules-based system for validating and verifying leave time requests.
+* **Self-Service Leave:** Enables employees to seamlessly manage their own vacation time.
+* **Manager Approval and Award Workflows:** Supports optional manager approval. Also allows managers to directly award personal leave time (within system-set limits).
+* **Extended Timeline:** Provides access to requests for the previous calendar year, and allows requests to be made up to 18 months in the future.
+* **Automated Email Alerts:** Uses email notifications to request manager approvals and notify employees of request status changes.
+* **Audit Trails:** Keeps comprehensive activity logs for all transactions.
+* **HR Management:** Enables HR personnel to securely enter and update employee vacation data in the system.
+* **Admin Overrides:** Enables HR and system administration personnel to override actions restricted by rules.
+* **System Integration:** Provides an API interface to allow other internal systems to retrieve employee vacation request information and updates.
 
-<a href="https://www.youtube.com/playlist?list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7" target="_blank">
-<img src="http://img.youtube.com/vi/SiGxu2N9ndU/mqdefault.jpg" alt="Watch the series" width="240" height="180" border="10" />
-</a>
+## ⚙️ Core Engineering Challenges
+* **Business Logic:** Handling the complex logic required to validate vacation request dates against employee balances and calendar constraints.
+* **Data Modeling:** Building an efficient relational data model to accurately store user hierarchies and stateful vacation requests.
+* **Security:** Implementing robust, role-based access control to ensure strict separation between employee, manager, and HR permissions.
 
-## How to install this example Golang project on Kubernetes
+## 📺 Watch the Full Series!
+*(Note: Add your YouTube video link or image placeholder here!)*
 
-The easiest way to see how this works is to watch the series, but here's the short version.
+## 🚀 Getting Started
 
-1. clone this project
-2. Set up a local kubernetes cluster - https://askcloudarchitech.com/posts/tutorials/local-kubernetes-startup-script/
-3. Install helm - `brew install helm`
-4. Setup your keys - see the video here - https://www.youtube.com/watch?v=k0L_yR30PqI&list=PLSvCAHoiHC_rqKbcu1ummWVpLTDBNZHH7&index=5
-5. Install with Helm
+The easiest way to see how this works is to launch the app instantly using Docker:
 
-## How to tweak this project for your own uses
+1. Download the `docker-compose.yml` file provided in the repository.
+2. Open your terminal, navigate to the folder containing the file, and run:
+   ```bash docker-compose up
+3. Docker will automatically download the correct version of MySQL, initialize the database schema, install the Java dependencies, and launch the application.
 
-Since this is an example project, I'd encourage you to clone and rename this project to use for your own puposes. It's a good starter boilerplate
+💡 How to Tweak This Project for Your Own Uses
+Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate!
 
-## Find a bug?
+🐛 Find a Bug?
+If you find an issue or would like to submit an improvement to this project, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue you created!
 
-If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
+🚧 Known Issues (Work in Progress)
+This project is still ongoing. The user interface and part of the business logic have not been completed yet. This is coming soon!
 
-## Known issues (Work in progress)
-
-This tutorial is till ongoing. The automation of the helm chart repo has not been completed yet. This is coming soon!
-
-## Like this project?
-
+☕ Like this project?
 If you are feeling generous, buy me a coffee! - https://buymeacoffee.com/zeinab.ibrahim

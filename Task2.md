@@ -121,10 +121,19 @@ DISCONNECT
 DISCONNECT
 ```
 **Q3: Draw the state machine of the request. [ch5]**
+
 **A3:**
+
+**Figure 1: State Machine Diagram**
 ![State Machine Diagram](UML/State_Machine_Diagram_Request_States.png)
 
 **Q4: Draw the sequence diagram of the request. [ch5]**
+
+**A5:**
+
+**Figure 2: Sequence Diagram**
+
+
 
 **Q5: Complete the rest of the use-case of this chapter [Cancel - Edit Pending Request] Flowchart, sequence diagram - check database change**
 

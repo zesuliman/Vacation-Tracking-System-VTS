@@ -49,21 +49,21 @@ Many organizations face the problem of tracking their employees vacation time. M
    
 ## For - Manage Time - use case
 1. Entities (Data Model)
-**Figure 1:** Entity Diagram showing the data model 
+### **Figure 1:** Entity Diagram showing the data model 
 ![Entity Diagram](UML/Entity_Diagram.png)
 2. Flow Chart
-**Figure 2:** Flowchart: Manage Time Use Case
+### **Figure 2:** Flowchart: Manage Time Use Case
 ![Flowchart: Manage Time Use Case](UML/A_Flowchart_Manage_Time_Use_Case.png)
-**Figure 3:** Flowchart: Edit Pending Request
+### **Figure 3:** Flowchart: Edit Pending Request
 ![Flowchart: Edit Pending Request](UML/B_Flowchart_Edit_Pending_Request.png)
-**Figure 4:** Flowchart: Withdraw Pending Request]
+### **Figure 4:** Flowchart: Withdraw Pending Request]
 ![Flowchart: Withdraw Pending Request](UML/C_Flowchart_Withdraw_Pending_Request.png)
-**Figure 5:** Flowchart: Cancel Request
+### **Figure 5:** Flowchart: Cancel Request
 ![Flowchart: Cancel Request](UML/D-_Flowchart_Cancel_Request.png)
 3. Sequence Diagram
-**Figure 6:** Sequence Diagram: Manage Time for Employee
+### **Figure 6:** Sequence Diagram: Manage Time for Employee
 ![Sequence Diagram: Manage Time for Employee](UML/F_Sequence_Diagram_Manage_Time_for_Employee.png)
-**Figure 7:** Flowchart: Sequence Diagram: Manage Time for Manager
+### **Figure 7:** Flowchart: Sequence Diagram: Manage Time for Manager
 ![Sequence Diagram: Manage Time for Manager](UML/E_Sequence_Diagram_Manage_Time_for_Manager.png)
 4. Pseudocode
 

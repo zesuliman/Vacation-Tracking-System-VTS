@@ -52,13 +52,13 @@ Many organizations face the problem of tracking their employees vacation time. M
 #### **Figure 1:** Entity Diagram showing the data model 
 ![Entity Diagram](UML/Entity_Diagram.png)
 ### 2. Flow Charts
-#### **Figure 2:** Flowchart A: Manage Time Use Case
+#### **Figure 2:** Flowchart A - Manage Time Use Case
 ![Flowchart A: Manage Time Use Case](UML/A_Flowchart_Manage_Time_Use_Case.png)
-#### **Figure 3:** Flowchart B: Edit Pending Request
+#### **Figure 3:** Flowchart B - Edit Pending Request
 ![Flowchart B: Edit Pending Request](UML/B_Flowchart_Edit_Pending_Request.png)
-#### **Figure 4:** Flowchart C: Withdraw Pending Request]
+#### **Figure 4:** Flowchart C - Withdraw Pending Request]
 ![Flowchart C: Withdraw Pending Request](UML/C_Flowchart_Withdraw_Pending_Request.png)
-#### **Figure 5:** Flowchart D: Cancel Request
+#### **Figure 5:** Flowchart D - Cancel Request
 ![Flowchart D: Cancel Request](UML/D-_Flowchart_Cancel_Request.png)
 ### 3. Sequence Diagram
 #### **Figure 6:** Sequence Diagram: Manage Time for Employee

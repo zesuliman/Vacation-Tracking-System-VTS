@@ -130,7 +130,7 @@ DISCONNECT
 
 **Q4: Draw the sequence diagram of the request. [ch5]**
 
-**A5:**
+**A4:**
 
 **Figure 2: Sequence Diagram**
 

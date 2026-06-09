@@ -33,7 +33,7 @@ The easiest way to see how this works is to launch the app instantly using Docke
    
 ## High-Level System Design
 
-<img width="4984" height="4134" alt="High_Level_design" src="https://github.com/user-attachments/assets/e9639fd9-6d27-4438-b79a-300af7545dc1" />
+<img width="4542" height="4003" alt="image" src="https://github.com/user-attachments/assets/76e02d8c-53d6-40a1-b9aa-c1c0c28e214f" />
 
 💡 How to Tweak This Project for Your Own Uses
 Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate!

@@ -61,9 +61,9 @@ Many organizations face the problem of tracking their employees vacation time. M
 #### **Figure 5:** Flowchart D - Cancel Request
 ![Flowchart D: Cancel Request](UML/D-_Flowchart_Cancel_Request.png)
 ### 3. Sequence Diagram
-#### **Figure 6:** Sequence Diagram: Manage Time for Employee
+#### **Figure 6:** Sequence Diagram - Manage Time for Employee
 ![Sequence Diagram: Manage Time for Employee](UML/F_Sequence_Diagram_Manage_Time_for_Employee.png)
-#### **Figure 7:** Flowchart: Sequence Diagram: Manage Time for Manager
+#### **Figure 7:** Sequence Diagram - Manage Time for Manager
 ![Sequence Diagram: Manage Time for Manager](UML/E_Sequence_Diagram_Manage_Time_for_Manager.png)
 ### 4. Pseudocode
 

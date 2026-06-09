@@ -124,7 +124,7 @@ DISCONNECT
 
 **A3:**
 
-**Figure 1: State Machine Diagram**
+#### **Figure 1: State Machine Diagram**
 
 ![State Machine Diagram](UML/State_Machine_Diagram_Request_States.png)
 
@@ -132,10 +132,16 @@ DISCONNECT
 
 **A4:**
 
-**Figure 2: Sequence Diagram**
+#### **Figure 2: Sequence Diagram**
 
 ![Sequence Diagram](UML/Vacation_Request_New_Process.png)
 
 
 **Q5: Complete the rest of the use-case of this chapter [Cancel - Edit Pending Request] Flowchart, sequence diagram - check database change**
+#### **Figure 3:** Flowchart B - Edit Pending Request
+![Flowchart B: Edit Pending Request](UML/B_Flowchart_Edit_Pending_Request.png)
+#### **Figure 4:** Flowchart C - Withdraw Pending Request]
+![Flowchart C: Withdraw Pending Request](UML/C_Flowchart_Withdraw_Pending_Request.png)
+#### **Figure 5:** Flowchart D - Cancel Request
+![Flowchart D: Cancel Request](UML/D-_Flowchart_Cancel_Request.png)
 

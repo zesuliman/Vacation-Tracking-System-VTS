@@ -30,6 +30,10 @@ The easiest way to see how this works is to launch the app instantly using Docke
    ```bash
    docker-compose up
 3. Docker will automatically download the correct version of MySQL, initialize the database schema, install the Java dependencies, and launch the application.
+   
+## High-Level System Design
+
+<img width="4984" height="4134" alt="High_Level_design" src="https://github.com/user-attachments/assets/e9639fd9-6d27-4438-b79a-300af7545dc1" />
 
 💡 How to Tweak This Project for Your Own Uses
 Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate!

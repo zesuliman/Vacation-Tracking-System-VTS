@@ -54,8 +54,16 @@ Moreover, organizations and large enterprieses more often have their own running
 1. Entities (Data Model)
 ![Entity Diagram](UML/Entity_Diagram.png)
 2. Flow Chart
-3. Sequence Diagram
-4. Pseudocode
+![Flowchart: Manage Time Use Case](UML/A_Flowchart_Manage_Time_Use_Case.png)
+![Flowchart: Edit Pending Request](UML/B_Flowchart_Edit_Pending_Request.png)
+![Flowchart: Withdraw Pending Request](UML/C_Flowchart_Withdraw_Pending_Request.png)
+![Flowchart: Cancel Request](UML/D-_Flowchart_Cancel_Request.png)
+
+4. Sequence Diagram
+![Sequence Diagram: Manage Time for Employee](UML/F_Sequence_Diagram_Manage_Time_for_Employee.png)
+
+![Sequence Diagram: Manage Time for Manager](UML/E_Sequence_Diagram_Manage_Time_for_Manager.png)
+6. Pseudocode
 
 ```pseudocode
 INPUT req_employee_id, selected_vacation_category

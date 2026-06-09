@@ -52,9 +52,10 @@ Moreover, organizations and large enterprieses more often have their own running
    
 ## For - Manage Time - use case
 1. Entities (Data Model)
-2. Flow Chart
-3. Sequence Diagram
-4. Pseudocode
+img(UML/ERD with colored entities (UML notation).png)
+3. Flow Chart
+4. Sequence Diagram
+5. Pseudocode
 
 ```pseudocode
 INPUT req_employee_id, selected_vacation_category

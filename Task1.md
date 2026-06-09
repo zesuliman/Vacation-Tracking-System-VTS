@@ -43,7 +43,7 @@ employee information and changes
 Many organizations face the problem of tracking their employees vacation time. Managers face the difficuilty of managing and monitoring their subordinates vacation time due to the limited casual interactions. Also, employees at the other hand need to be responsible of managing their own time-off. The system is designed and developed for both employees and managers to help them coordinate granting and scheduling leave time. At the other hand the HR department will benefit by minimizing their intervention in this aspect and focusing on core business activites.
 Moreover, organizations and large enterprieses more often have their own running systems that lack this feature. So the Vacation Tracking system must be built in consideration with the existing other systems in the enterprieses' space.
 
-## Actors
+## List of Actors
 1. Employee.
 2. Manager.
 3. HR Clerk.

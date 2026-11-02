@@ -1,8 +1,8 @@
 # 🌴 Vacation Tracking System (VTS)
 
-## This repository provides an implementation example for a dynamic Vacation Tracking System designed for multi-manager organizational structures. 
+## This repository provides an implementation example for a dynamic Vacation Tracking System designed for institutions with multi-manager organizational structures. 
 
-This system enables employees to manage their leave and time-off requests while providing managers with a centralized view to track and schedule leaves across multiple projects and cross-functional teams.
+The system enables employees to manage their leave and time-off requests while providing managers with a centralized view to track and schedule leaves across multiple projects and cross-functional teams.
 
 ## ✨ Key Features
 * **Rules-Based Validation:** Implements a flexible rules-based system for validating and verifying leave time requests.
@@ -14,22 +14,15 @@ This system enables employees to manage their leave and time-off requests while 
 * **HR Management:** Enables HR personnel to securely enter and update employee vacation data in the system.
 * **Admin Overrides:** Enables HR and system administration personnel to override actions restricted by rules.
 * **System Integration:** Provides an API interface to allow other internal systems to retrieve employee vacation request information and updates.
+* **Reporting and Statistics** provide a variety of reports for HR Personnel to display.
 
 ## ⚙️ Core Engineering Challenges
 * **Business Logic:** Handling the complex logic required to validate vacation request dates against employee balances and calendar constraints.
-* **Data Modeling:** Building an efficient relational data model to accurately store user hierarchies and stateful vacation requests.
+* **Data Modeling:** Building an efficient relational data model to accurately store user hierarchies and vacation requests.
 * **Security:** Implementing robust, role-based access control to ensure strict separation between employee, manager, and HR permissions.
 
 
 ## 🚀 Getting Started
-
-The easiest way to see how this works is to launch the app instantly using Docker:
-
-1. Download the `docker-compose.yml` file provided in the repository.
-2. Open your terminal, navigate to the folder containing the file, and run:
-   ```bash
-   docker-compose up
-3. Docker will automatically download the correct version of MySQL, initialize the database schema, install the Java dependencies, and launch the application.
    
 ## High-Level System Design
 

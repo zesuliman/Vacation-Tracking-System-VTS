@@ -26,19 +26,21 @@ A Vacation Tracking System (VTS) will provide individual employees with the capa
 
 ## Non-Functional Requirements
 
-1. Usability: easy to use.
+1. Usability: easy of use.
 2. Accessiblity: the system must be acessible therough a browser.
-3. Security: the system must utilize the existing intranet single-sign on capability.
+3. Security: the system must utilize the existing single-sign on capability.
 4. Interoperability: the system must be able to communicate with existing legacy systems.
 
 ## Constraints
 
 1. The system must be web-based and accessible to users via a web browser.
-2. The system must be an extension to the existing portal system.
+2. The system must be an extension to any existing HR system if exist.
 3. The system must use the existing sign-on mechanism for all authentication.
 
 ## Domain Problem
-Many organizations face the problem of tracking their employees vacation time. Managers face the difficuilty of managing and monitoring their subordinates vacation time due to the limited casual interaction. Employees at the other hand need to be responsible of managing their own time-off. Moreover, organizations and large enterprieses more often have their own running systems that lack this feature. So the Vacation Tracking system must be built in consideration with the existing other systems.
+Many organizations face the problem of tracking their employees vacation time. Managers face the difficuilty of managing and monitoring their subordinates vacation time due to the limited casual interaction. Employees at the other hand need to be responsible of managing their own time-off. In addition, HR Personnel find it difficuilt to manage each employees' vacation difficulit beside their ongoing responsibilities. Moreover, organizations and large enterprises more often have their own running systems that lack this feature. So the Vacation Tracking system must be built in consideration with the existing other systems.
+## Scope
+The system will target the management of vacation and any type of time-off for employees and manager withing a certain organization. The system will not cover other aspects of HR.
 
 ## List of Actors
 1. Employee.
@@ -46,7 +48,8 @@ Many organizations face the problem of tracking their employees vacation time. M
 3. HR Clerk.
 4. System Admin.
 
-   
+## Domain Entities and Relationships
+
 ## For - Manage Time - use case
 ### 1. Entities (Data Model)
 #### **Figure 1:** Entity Diagram showing the data model 
@@ -164,3 +167,5 @@ FUNCTION validateFrToDates(start_date, end_date)
 END FUNCTION
 DISCONNECT
 ```
+By: Zeinab Suliman Mohamed Osman
+Last Updated: 02/11/2026

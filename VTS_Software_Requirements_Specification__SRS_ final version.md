@@ -5,7 +5,6 @@
 |---|---|
 | **Author** | Zeinab Suliman Mohamed Osman |
 | **Document version** | 2.0  |
-| **Status** | Draft|
 
 ---
 

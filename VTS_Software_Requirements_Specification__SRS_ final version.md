@@ -76,6 +76,8 @@ Out of scope: payroll, recruitment, performance management, attendance, shift sc
 
 - Project README (high-level system design diagram)
 - Figures 1 to 8 in Section 6 of this document
+- OWASP Application Security Verification Standard (ASVS).
+- Web Content Accessibility Guidelines (WCAG) 2.2.
 
 
 ## 2. Overall Description

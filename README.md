@@ -25,7 +25,7 @@ Employees manage their own leave, managers approve and monitor the leave of thei
 * **Security:** Role-based access control with strict separation between employee, manager, HR and System Admin permissions, including restricted access to medical information.
 
 ## 📄 Documentation
-Requirements, business rules, data model, diagrams, pseudocode, acceptance criteria and traceability matrix are in the [Software Requirements Specification (SRS)](./VTS_SRS_v2_6.md).
+Requirements, business rules, data model, diagrams, pseudocode, acceptance criteria and traceability matrix are in the [Software Requirements Specification (SRS)](docs/VTS_Software_Requirements_Specification__SRS.md).
 
 ## 🚀 Getting Started
 
